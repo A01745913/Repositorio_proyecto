@@ -29,7 +29,7 @@ class Cliente{
       dineroGastado = dineroGastado + dinero;
     }
     double aplicarDescuento(double precio, double descuento){
-      descuento = descuento/10;
+      descuento = descuento/100;
       return precio*descuento;
     }
 };
