@@ -2,21 +2,21 @@ using namespace std;
 class Trabajador{
   private:
     int idTrabajador;
-    string contraseña;
+    string contrasenia;
     string turno;
     string nombreTrabajador;
     double totalVentas;
   public:
     Trabajador(){
       idTrabajador = 00000;
-      contraseña = "contraseña";
+      contrasenia = "contraseña";
       turno = "Matutino";
       nombreTrabajador = "Nombre Apellido";
       totalVentas = 0.0;
     }
-    Trabajador(int idTrabajador, string contraseña, string turno, string nombreTrabajador, double totalVentas){
+    Trabajador(int idTrabajador, string contrasenia, string turno, string nombreTrabajador, double totalVentas){
       this->idTrabajador = idTrabajador;
-      this->contraseña = contraseña;
+      this->contrasenia = contrasenia;
       this->turno = turno;
       this->nombreTrabajador = nombreTrabajador;
     }

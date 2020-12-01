@@ -4,4 +4,4 @@ class Moneda{
     double dollar;
     double euro;
     double yen;
-}
+};

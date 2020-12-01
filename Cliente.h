@@ -22,7 +22,7 @@ class Cliente{
       this->dineroGastado = dineroGastado;
     }
 
-    double descuentoCumpleaños(double precio){
+    double descuentoCumpleanios(double precio){
       return precio*0.9;
     }
     void agregarDineroGastado(){
