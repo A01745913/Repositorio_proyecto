@@ -24,13 +24,15 @@ class Jornada{
             cout << "Se ha ganado la cantidad de: " << dineroGanado << "MXN" << endl;
             cout << "Se encuentran " << trabajadoresActivos << " trabajando actualmente.\n" << endl;
         }
-        void registrarGanancia(int cant){
-            dineroGanado = dineroGanado + cant;
-        }
         void registrarTrabajadores(int cant){
             trabajadoresActivos = trabajadoresActivos + cant;
         }
         void reducirTrabajadores(int cant){
-            trabajadoresActivos = trabajadoresActivos - cant;
+            if(trabajadoresActivos > 0){
+                trabajadoresActivos = trabajadoresActivos - cant;
+            }
+            else{
+                cout << "Ya no hay trabajadores activos." << endl;
+            }
         }
 };
