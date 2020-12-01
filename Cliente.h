@@ -25,10 +25,11 @@ class Cliente{
     double descuentoCumpleanios(double precio){
       return precio*0.9;
     }
-    void agregarDineroGastado(){
-
+    void agregarDineroGastado(double dinero){
+      dineroGastado = dineroGastado + dinero;
     }
-    void aplicarDescuento(){
-
+    double aplicarDescuento(double precio, double descuento){
+      descuento = descuento/100;
+      return precio*descuento;
     }
 };
