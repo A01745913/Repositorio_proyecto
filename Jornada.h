@@ -1,4 +1,7 @@
 using namespace std;
+/*
+Código individual de Jorge Rojas Rivas A01745334
+*/
 class Jornada{
     private:
         int numProducVend;
@@ -20,6 +23,9 @@ class Jornada{
             cout << "La cantidad de productos vendidos al momento es: " << numProducVend << endl;
             cout << "Se ha ganado la cantidad de: " << dineroGanado << "MXN" << endl;
             cout << "Se encuentran " << trabajadoresActivos << " trabajando actualmente.\n" << endl;
+        }
+        void registrarGanancia(int cant){
+            dineroGanado = dineroGanado + cant;
         }
         void registrarTrabajadores(int cant){
             trabajadoresActivos = trabajadoresActivos + cant;
