@@ -31,10 +31,8 @@ class Jornada{
             trabajadoresActivos = trabajadoresActivos + cant;
         }
         void reducirTrabajadores(int cant){
-<<<<<<< Updated upstream
             if(trabajadoresActivos > 0){
                 trabajadoresActivos = trabajadoresActivos - cant;
-=======
             if(cant < 0){
                 cant = cant * -1;
             }
@@ -43,7 +41,6 @@ class Jornada{
                 if(trabajadoresActivos < 0){
                     trabajadoresActivos = 0;
                 }
->>>>>>> Stashed changes
             }
             else{
                 cout << "Ya no hay trabajadores activos." << endl;
