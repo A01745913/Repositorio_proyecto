@@ -23,6 +23,7 @@ class Cliente{
     }
 
     double descuentoCumpleanios(double precio){
+      edadCliente++;
       return precio*0.9;
     }
     void agregarDineroGastado(double dinero){
@@ -31,5 +32,10 @@ class Cliente{
     double aplicarDescuento(double precio, double descuento){
       descuento = descuento/100;
       return precio*descuento;
+    }
+    void imprimirCliente(){
+      cout << "Nombre: " << nombreCliente << "\t" << "ID: " << idCliente << endl;
+      cout << "Edad: " << edadCliente << "\t" << "Correo: " << correo << endl;
+      cout << "Dinero gastado: " << dineroGastado << endl;
     }
 };
