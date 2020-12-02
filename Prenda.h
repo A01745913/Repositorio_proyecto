@@ -16,13 +16,14 @@ class Prenda{
       this->precio = precio;
     }
 
-    void registrarPrenda(){
-      
+    void cambiarPrenda(string cambio){
+      tipo = cambio;
     }
-    void sumar(){
-
+    void sumar(int numero){
+      cantidad = cantidad + numero;
     }
     void informar(){
-
+      cout << "Se tiene " << cantidad << " piezas de " << tipo << "." << endl;
+      cout << "Su precio actual es " << precio << endl;
     }
 };
