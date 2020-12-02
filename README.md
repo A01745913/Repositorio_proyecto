@@ -1,2 +1,2 @@
 # Repositorio_proyecto
-Proyecto individual de Karla Paola Ramírez Islas
+Programa individual; Karla Paola Ramírez Islas
