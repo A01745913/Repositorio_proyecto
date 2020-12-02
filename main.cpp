@@ -4,7 +4,6 @@
 #include "Prenda.h"
 #include "Cliente.h"
 #include "Trabajador.h"
-#include "Club.h"
 #include "Jornada.h"
 using namespace std;
 
