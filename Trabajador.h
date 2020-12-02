@@ -24,14 +24,15 @@ class Trabajador{
     void imprimirTrabajador(){
       cout << "Id: " << idTrabajador << "\t" << "Nombre: " << nombreTrabajador << "\n" << "Turno: " << turno << "\t " << " Total de ventas: $" << totalVentas << "\n" << endl;
     }
-
-    void ingresarPrenda(){
-
+    void cambiarTurno(){
+      if(turno == "Matutino"){
+        turno = "Vespertino";
+      }
+      else{
+        turno = "Matutino";
+      }
     }
-    void registrarCliente(){
-
-    }
-    void eliminarCliente(){
-      
+    void terminarVenta(double venta){
+      totalVentas = totalVentas + venta;
     }
 };

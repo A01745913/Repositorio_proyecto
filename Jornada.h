@@ -33,6 +33,7 @@ class Jornada{
         void reducirTrabajadores(int cant){
             if(trabajadoresActivos > 0){
                 trabajadoresActivos = trabajadoresActivos - cant;
+            }
             if(cant < 0){
                 cant = cant * -1;
             }
@@ -45,5 +46,9 @@ class Jornada{
             else{
                 cout << "Ya no hay trabajadores activos." << endl;
             }
+        }
+        void agregarVenta(double venta, int cant){
+            numProducVend = numProducVend + cant;
+            dineroGanado = dineroGanado + venta;
         }
 };
