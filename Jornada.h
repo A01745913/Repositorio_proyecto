@@ -33,6 +33,7 @@ class Jornada{
         void reducirTrabajadores(int cant){
             if(trabajadoresActivos > 0){
                 trabajadoresActivos = trabajadoresActivos - cant;
+            }
             if(cant < 0){
                 cant = cant * -1;
             }
